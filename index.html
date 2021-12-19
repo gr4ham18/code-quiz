@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graham's Code Quiz</title>
+    <link rel="icon" href="./assets/images/Question-Fav.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title" onclick="pageLoad()">Graham's Code Quiz</h1>
+      <div class="subtitle">
+        <h2 class="hoverable-text" onclick="renderHighScores()">
+          Check The Highest Scores!
+        </h2>
+        <h2 id="timer-el"></h2>
+      </div>
+    </header>
+    <main>
+      <section id="intro" class="intro">
+        <h3>Welcome Coders!</h3>
+        <p>Good Luck on this timed programming quiz. Here are the rules:</p>
+        <ul>
+          <li>You will have 240 seconds to complete the quiz.</li>
+          <li>Answers are final and can not be changed once selected.</li>
+          <li>You may skip questions.</li>
+          <li>30 penalty per incorrect answers.</li>
+          <li>10 points per correct answer.</li>
+          <li>At the end every second left gives you 1 point.</li>
+        </ul>
+        <button class="hoverable-button" onclick="beginQuiz()">Start Quiz!</button>
+      </section>
+      <section id="question-card" class="question-card">
+        <h3 id="question-text-el"></h3>
+        <div id="answers-container-el"></div>
+        <div id="question-notification-el"></div>
+        <button
+          id="next-question-button"
+          class="question-submit hoverable-button"
+          onclick="nextQuestion()"
+        >
+          Skip
+        </button>
+      </section>
+      <section id="results" class="results">
+        <p>Correct answers:</p>
+        <p id="correct-questions-el"></p>
+        <p>Time Remaining:</p>
+        <p id="time-remaining-el"></p>
+        <p>Final score:</p>
+        <p id="final-score-el"></p>
+        <input
+          type="text"
+          name="initials"
+          id="initials"
+          placeholder="Enter initials"
+          maxlength="3"
+        />
+        <p id="invalid-initials-message">Minimum 3 letters required!</p>
+        <button class="hoverable-button" onclick="saveScore()">Save Score</button>
+        <button class="hoverable-button" onclick="pageLoad()">Restart Quiz</button>
+      </section>
+      <section id="high-scores" class="high-scores">
+        <h3>Highest Scores!</h3>
+        <p id="empty-storage-message">
+          There are no scores currently saved.
+        </p>
+        <ol id="high-scores-ol"></ol>
+        <button class="hoverable-button" onclick="pageLoad()">Return to Quiz</button>
+        <button class="hoverable-button" id="clear-scores-button" onclick="clearScores()">Clear Saved Scores</button>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="hoverable-text"
+        href="https://github.com/gr4ham18/code-quiz"
+        target="_blank"
+      >
+        <h4>Check Github Repo</h4>
+        <img class="github-icon" src="./assets/images/git-icon.png" />
+      </a>
+    </footer>
+    <script type="text/Javascript" src="assets/js/questions.js"></script>
+    <script type="text/Javascript" src="assets/js/quiz.js"></script>
+  </body>
+</html>
