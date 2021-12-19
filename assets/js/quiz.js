@@ -95,9 +95,9 @@ function captureAnswer(e) {
 function nextQuestion() {
     questionCounter++;
     renderQuestion(questions[questionCounter]);
-  }
+}
 
-  // generate the result
+// generate the result
 function renderResults() {
     stopTimer();
     document.getElementById("timer-el").innerText = "";
@@ -106,9 +106,30 @@ function renderResults() {
     sections.questionCard.style.display = "none";
     sections.results.style.display = "flex";
     document.getElementById(
-      "correct-questions-el"
+        "correct-questions-el"
     ).innerText = `${correctQuestions}/10`;
     document.getElementById("time-remaining-el").innerText = timeRemaining;
     document.getElementById("final-score-el").innerText = score;
     document.getElementById("initials").value = "";
-  }
+}
+
+// save score
+let localStorageKey = "WEB-APIS-CHALLENGE-code-quiz-mikeyrod22";
+function saveScore() {
+    const initials = document.getElementById("initials").value.toUpperCase();
+    if (initials.length !== 3 || initials.match(/[^a-zA-Z]/)) {
+        document.getElementById("invalid-initials-message").style.display = "unset";
+    } else {
+        let store = window.localStorage.getItem(localStorageKey);
+        let payload = { initials: initials, score: score };
+        if (store) {
+            let newStore = JSON.parse(store);
+            newStore.push(payload);
+            window.localStorage.setItem(localStorageKey, JSON.stringify(newStore));
+        } else {
+            window.localStorage.setItem(localStorageKey, JSON.stringify([payload]));
+        }
+        renderHighScores();
+    }
+}
+
