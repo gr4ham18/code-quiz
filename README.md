@@ -37,7 +37,7 @@ CSS
 JavaScript
 
 ## Screenshot
-![](assets/images/Screen Shot.png)
+![](assets/images/screenshot.png)
 
 ## Deployed Application
 Deployed application URL: <a href="https://gr4ham18.github.io/code-quiz/"> https://gr4ham18.github.io/code-quiz/ </a> Good Luck!
