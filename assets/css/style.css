@@ -111,3 +111,27 @@
     box-shadow: 0 15px 10px #66688f3a;
     transition: all 0.3s ease 0s;
   }
+
+  .intro {
+    text-align: left;
+  }
+  
+  .intro p {
+    margin: 1em 0 0 1em;
+    font-weight: bold;
+  }
+  
+  .intro ul {
+    list-style: inside;
+    font-size: 24px;
+    margin: 1em auto;
+    list-style-position: outside;
+  }
+  
+  .intro button {
+    font-size: 32px;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+  
