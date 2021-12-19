@@ -169,3 +169,29 @@
     font-size: 32px;
     padding: 0.5em;
   }
+
+  .results {
+    text-align: center;
+    padding: 4em;
+    justify-content: space-evenly;
+  }
+  
+  .results p {
+    font-size: 28px;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  #initials {
+    font-size: 28px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .results button {
+    width: 50%;
+    margin: 1em auto 0;
+    font-size: 28px;
+    padding: 0.5em 0;
+  }
