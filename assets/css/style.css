@@ -135,3 +135,37 @@
     padding: 0.5em;
   }
   
+  #answers-container-el {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+    border-bottom: 3px solid var(--text-dark);
+  }
+  
+  .answer-choice {
+    width: 70%;
+    font-size: 24px;
+    text-align: left;
+    padding: 0.7em;
+    margin: 0.5em auto;
+  }
+  
+  .non-selected {
+    background-color: var(--navy-1);
+    color: var(--text-light);
+  }
+  
+  #question-notification-el {
+    margin: 1em;
+    font-style: italic;
+    font-size: 28px;
+  }
+  
+  .question-submit {
+    width: 25%;
+    margin: 0 auto 1em;
+    font-size: 32px;
+    padding: 0.5em;
+  }
