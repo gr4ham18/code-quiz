@@ -91,3 +91,8 @@ function captureAnswer(e) {
     document.getElementById("next-question-button").innerText = "Continue";
 }
 
+// move to next question
+function nextQuestion() {
+    questionCounter++;
+    renderQuestion(questions[questionCounter]);
+  }
