@@ -107,7 +107,7 @@ function renderResults() {
     sections.results.style.display = "flex";
     document.getElementById(
         "correct-questions-el"
-    ).innerText = `${correctQuestions}/10`;
+    ).innerText = `${correctQuestions}/14`;
     document.getElementById("time-remaining-el").innerText = timeRemaining;
     document.getElementById("final-score-el").innerText = score;
     document.getElementById("initials").value = "";
