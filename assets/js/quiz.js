@@ -33,3 +33,21 @@ function beginQuiz() {
     renderQuestion(questions[questionCounter]);
   }
 
+// timer functionality 
+function startTimer() {
+    interval = setInterval(countdown, 1000);
+  }
+  
+  function countdown() {
+    if (timeRemaining <= 0) return renderResults();
+    timeRemaining--;
+    document.getElementById(
+      "timer-el"
+    ).innerText = `Remaining Time: ${timeRemaining}`;
+  }
+  
+  function stopTimer() {
+    clearInterval(interval);
+  }
+
+  
