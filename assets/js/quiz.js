@@ -113,7 +113,7 @@ function renderResults() {
     document.getElementById("initials").value = "";
 }
 
-// save score
+// save result
 let localStorageKey = "WEB-APIS-CHALLENGE-code-quiz-mikeyrod22";
 function saveScore() {
     const initials = document.getElementById("initials").value.toUpperCase();
@@ -133,3 +133,8 @@ function saveScore() {
     }
 }
 
+// clear stored result
+function clearScores() {
+    window.localStorage.removeItem(localStorageKey);
+    renderHighScores();
+}
