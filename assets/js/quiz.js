@@ -68,3 +68,26 @@ function renderQuestion(question) {
         document.getElementById("answers-container-el").appendChild(btn);
     }
 }
+
+// store answer
+function captureAnswer(e) {
+    if (e.target.innerText.charAt(0) === questions[questionCounter].correct) {
+        correctQuestions++;
+        document.getElementById("question-notification-el").innerText = "Your answer is ... Correct!";
+    } else {
+        timeRemaining > 30 ? (timeRemaining -= 30) : (timeRemaining = 0);
+        document.getElementById(
+            "question-notification-el"
+        ).innerText = `Your answer is ... Incorrect, the correct answer is ${questions[questionCounter].correct}`;
+    }
+    for (item in e.target.parentElement.children) {
+        let button = e.target.parentElement.children[item];
+        button.onclick = "";
+        button.className = "answer-choice";
+        if (button !== e.target) {
+            button.className = "answer-choice non-selected";
+        }
+    }
+    document.getElementById("next-question-button").innerText = "Continue";
+}
+
