@@ -22,3 +22,14 @@ function pageLoad() {
     timeRemaining = 240;
 }
 pageLoad();
+
+// start
+function beginQuiz() {
+    document.getElementById(
+      "timer-el"
+    ).innerText = `Remaining Time: ${timeRemaining}`;
+    startTimer();
+    questionCounter = 0;
+    renderQuestion(questions[questionCounter]);
+  }
+
