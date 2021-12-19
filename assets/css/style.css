@@ -195,3 +195,22 @@
     font-size: 28px;
     padding: 0.5em 0;
   }
+
+  .high-scores p {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 1em;
+  }
+  
+  .high-scores ol {
+    margin: 1em 0;
+    font-size: 24px;
+    align-self: center;
+  }
+  
+  .high-scores button {
+    width: 50%;
+    margin: 1em auto 0;
+    font-size: 28px;
+    padding: 0.5em 0;
+  }
