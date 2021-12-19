@@ -96,3 +96,19 @@ function nextQuestion() {
     questionCounter++;
     renderQuestion(questions[questionCounter]);
   }
+
+  // generate the result
+function renderResults() {
+    stopTimer();
+    document.getElementById("timer-el").innerText = "";
+    document.getElementById("invalid-initials-message").style.display = "none";
+    score = timeRemaining + correctQuestions * 10;
+    sections.questionCard.style.display = "none";
+    sections.results.style.display = "flex";
+    document.getElementById(
+      "correct-questions-el"
+    ).innerText = `${correctQuestions}/10`;
+    document.getElementById("time-remaining-el").innerText = timeRemaining;
+    document.getElementById("final-score-el").innerText = score;
+    document.getElementById("initials").value = "";
+  }
