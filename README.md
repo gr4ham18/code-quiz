@@ -22,14 +22,14 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ## Usage
-Thisis a website that consists in a code challenge/quiz!
-You will have 240 seconds to complete the quiz.
-Answers are final and can not be changed once selected.
-You may skip questions.
-30 penalty per incorrect answers.
-10 points per correct answer.
-At the end every second left gives you 1 point.
-at the end you can retake the quiz or see the highest scores stored on local repo.
+This is a website that consists in a code challenge/quiz!</br>
+You will have 240 seconds to complete the quiz.</br>
+Answers are final and can not be changed once selected.</br>
+You may skip questions.</br>
+30 penalty per incorrect answers.</br>
+10 points per correct answer.</br>
+At the end every second left gives you 1 point.</br>
+at the end you can retake the quiz or see the highest scores stored on local repo.</br>
 
 ## Technologies Used
 HTML
