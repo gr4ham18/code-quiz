@@ -1,43 +1,47 @@
-# code-quiz
 
-## Purpose
-Coding Quiz
+<h1 align="center"> Code Quiz </h1>
+  
+![badge](https://img.shields.io/badge/license-none-brightgreen)<br />
 
-## User Story
-AS A coding boot camp student</br>
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores</br>
-SO THAT I can gauge my progress compared to my peers</br>
+## Description
+ Application the presents you with a timed quiz with html, Java and Css questions.
 
-## Acceptance Criteria
-GIVEN I am taking a code quiz</br>
-WHEN I click the start button</br>
-THEN a timer starts and I am presented with a question</br>
-WHEN I answer a question</br>
-THEN I am presented with another question</br>
-WHEN I answer a question incorrectly</br>
-THEN time is subtracted from the clock</br>
-WHEN all questions are answered or the timer reaches 0</br>
-THEN the game is over</br>
-WHEN the game is over</br>
-THEN I can save my initials and score</br>
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+Not required
 
 ## Usage
-This is a website that consists in a code challenge/quiz!</br>
-You will have 240 seconds to complete this quiz.</br>
-All answers are final and can not be changed once selected.</br>
-You may skip questions as needed.</br>
-There is a 30 second penalty per incorrect answer.</br>
-You earn 10 points per correct answer.</br>
-At the end, you receive 1 bonus point per remaining second.</br>
-at the end you can retake the quiz or see the highest scores stored on local repo.</br>
+-  Open link https://gr4ham18.github.io/code-quiz/
+ - Read the rules.
+ - Click "Start quiz"
+ - Answer question.
+ - See results at the end
 
-## Technologies Used
-HTML</br>
-CSS</br>
-JavaScript</br>
+## License
+![badge](https://img.shields.io/badge/license-none-brightgreen)
+<br />
+This application is covered by the none license. 
 
-## Screenshot
-![](assets/images/screenshot.png)
+## Contributing
+ gr4ham18
 
-## Deployed Application
-Deployed application URL: <a href="https://gr4ham18.github.io/code-quiz/"> https://gr4ham18.github.io/code-quiz/ </a> Good Luck!
+
+
+## Questions
+ reporte issues at my github<br />
+<br />
+Find me on GitHub: [gr4ham18](https://github.com/gr4ham18)<br />
+<br />
+ Email me with any questions: Gr4ham18@gmail.com<br /><br />
+
+
+    
